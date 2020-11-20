@@ -1,0 +1,19 @@
+// reset all default properties of input
+
+input[type=url] {
+    padding: .5rem 2rem;
+    background-color: $primary-green-color;
+    font-size: 1.2rem;
+    color: $primary-text-color;
+    outline: none;
+    border: 1px solid $primary-background-color;
+    outline: transparent solid 2px;
+    outline-offset: 1px;
+    outline-color: $primary-text-color;
+    animation: pulse 1s linear infinite;
+
+
+    &::placeholder {
+        color: rgba( $primary-text-color, 0.75);
+    }
+}

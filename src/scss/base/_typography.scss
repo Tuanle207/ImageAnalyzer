@@ -1,0 +1,22 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $primary-text-color;
+    width: 100vw;
+    height: 100vh;
+}
+
+.primary-heading {
+    font-weight: 500;
+    color: $primary-text-color;
+    font-size: 1.6rem;
+}
+
+.tertiary-heading {
+    font-weight: 300;
+    color: $primary-text-color;
+    font-size: 1.4rem;
+}

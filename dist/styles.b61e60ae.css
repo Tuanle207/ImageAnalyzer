@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: #43B972;
+  background-color: #000;
+}
+
+.size-fixed-heading {
+  width: 15rem !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.primary-heading {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.tertiary-heading {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.root {
+  background: url("/background.f2f908d8.png");
+  background-size: cover;
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.options {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 3rem;
+}
+.options__row {
+  margin-top: 1rem;
+  display: flex;
+}
+.options__row-items {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.options__row-items > div {
+  flex: 0 0 15rem;
+  margin-bottom: 1rem;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 5rem;
+  padding: 2rem 3rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+}
+.actions > button:first-child {
+  background-color: transparent;
+}
+.actions > button:first-child > svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+}
+.actions > button:first-child:hover > svg {
+  fill: #43B972;
+}
+.actions > button:last-child > svg {
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor;
+}
+.actions > p {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.actions > p::before, .actions > p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4rem;
+  width: 3rem;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.actions > p::after {
+  left: auto;
+  right: -4rem;
+}
+.actions > input {
+  width: 30rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.request {
+  width: 30rem;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.canvas {
+  width: 60rem;
+  height: 40rem;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.response {
+  width: 30rem;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-group {
+  display: inline-block;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-label:hover {
+  color: #43B972;
+}
+.checkbox-label:hover .checkbox-button {
+  border: solid #43B972 2px;
+}
+.checkbox-label:hover .checkbox-icon {
+  fill: #43B972;
+}
+
+.checkbox-button {
+  display: inline-block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid #fff 2px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.checkbox-icon {
+  opacity: 0;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #43B972;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-input:checked + .checkbox-label > .checkbox-button > .checkbox-icon {
+  opacity: 1;
+}
+
+button {
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #43B972;
+}
+button:focus {
+  outline: none;
+}
+
+.rich-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  border-radius: 20px;
+  background-color: #505BB9;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.rich-button p {
+  margin-right: 1rem;
+}
+.rich-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type=text] {
+  padding: 0.5rem 2rem;
+  background-color: #43B972;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  animation: all 1.2s;
+}
+input[type=text]::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+input[type=text]:focus {
+  outline-color: #fff;
+}
+
+.arrow {
+  position: relative;
+  height: 2px;
+  width: 10rem;
+  background-color: #fff;
+}
+
+
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */

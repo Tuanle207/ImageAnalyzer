@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <title>Image Analyzer</title>
+</head>
+<body>
+    <div class="root">
+        <div class="options">
+            <h2 class="primary-heading">Request Options</h2>
+            <div class="options__row">
+                <h3 class="tertiary-heading size-fixed-heading">Visual features</h3>
+                <div id="visual-features" class="options__row-items">
+                </div>
+            </div>
+
+            <div class="options__row">
+                <h3 class="tertiary-heading size-fixed-heading">Details</h3>
+                <div id="details" class="options__row-items">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="actions">
+                <!-- <button>
+                    <svg class="icon-select-image">
+                        <use href="/assets/sprites.svg#icon-checkmark"></use>
+                    </svg>
+                </button>
+                <p>or</p>    -->
+                <input type="url" name="url" id="url" autofocus autocomplete="off" placeholder="Enter an image url here...">
+                <!-- <div class="arrow"></div> -->
+                <button class="rich-button" id="callApiBtn">
+                    <p>Request API</p>
+                    <svg>
+                        <use href="/assets/sprites.svg#icon-checkmark"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="request">
+                    <h2 class="primary-heading">Request body</h2>
+                    <div class="request__url">
+                        <p class="tertiary-heading">Request URL: </p>
+                        <p></p>
+                    </div>
+                    <div class="request__body">
+                        <p class="tertiary-heading">Request body: </p>
+                        <textarea readonly="true"></textarea>
+                    </div>
+                </div>
+                <canvas class="canvas" id="canvas"></canvas>
+                <textarea class="response" spellcheck="false" readonly="true"></textarea>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
