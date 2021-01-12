@@ -1,5 +1,5 @@
 .root {
-    background: url('../assets/background.png');
+    background: url('./assets/background.png');
     background-size: cover;
     width: 100%;
     padding: 3rem;
@@ -144,17 +144,25 @@
     width: 30rem;
     padding: 1rem 2rem;
     background: rgba(#000, 0.5);
-    color: $primary-text-color;
-    border: none;
-    letter-spacing: 1px;
-    resize: none;
 
-    &:focus {
-        outline-style: none;
-    }
-
-    &::-webkit-scrollbar {
-        display: none;
+    &__body {
+        color: $primary-text-color;
+        border: none;
+        letter-spacing: 1px;
+        resize: none;
+        width: 100%;
+        background: transparent;
+        height: 40rem;
+    
+        &:focus {
+            outline-style: none;
+        }
+    
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
+
+
 

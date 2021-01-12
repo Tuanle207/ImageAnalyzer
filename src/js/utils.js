@@ -1,4 +1,4 @@
-function getImageSizeForRendering(img, canvas) {
+export function getImageSizeForRendering(img, canvas) {
 
     const size = {
         x: 0,
@@ -31,7 +31,7 @@ function getImageSizeForRendering(img, canvas) {
     return size;
 }
 
-function getActualCoordsForRendering(img, box, parentSize) {
+export function getActualCoordsForRendering(img, box, parentSize) {
 
     const widthRatio = parentSize.w / img.naturalWidth;
     const heightRatio = parentSize.h / img.naturalHeight
@@ -47,8 +47,9 @@ function getActualCoordsForRendering(img, box, parentSize) {
 }
 
 
-function loadImageInformation(ctx, img, url, data) {
-    
+
+export function loadImageInformation(ctx, img, url, data) {
+    console.log('alo');
     img.onload = function() {
         const imgSize = getImageSizeForRendering(img, canvas);
         //ctx.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight, imgSize.x, imgSize.y, imgSize.w, imgSize.h);
@@ -82,9 +83,3 @@ function loadImageInformation(ctx, img, url, data) {
     
     img.src = url;
 }
-
-export default {
-    getImageSizeForRendering,
-    getActualCoordsForRendering,
-    loadImageInformation
-};

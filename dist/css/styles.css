@@ -213,15 +213,20 @@ body {
   width: 30rem;
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.5);
+}
+.response__body {
   color: #fff;
   border: none;
   letter-spacing: 1px;
   resize: none;
+  width: 100%;
+  background: transparent;
+  height: 40rem;
 }
-.response:focus {
+.response__body:focus {
   outline-style: none;
 }
-.response::-webkit-scrollbar {
+.response__body::-webkit-scrollbar {
   display: none;
 }
 

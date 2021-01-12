@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "webpack",
-    "watch:sass": "sass ./src/scss/main.scss ./src/css/styles.css --watch"
+    "start": "npm run watch:js & npm run watch:sass",
+    "watch:js": "webpack serve",
+    "build": "webpack --config webpack.config.js",
+    "watch:sass": "sass ./src/scss/main.scss ./dist/css/styles.css --watch"
   },
   "author": "Tuanle207 <Tuanle2x7@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0"
+    "core-js": "^3.8.2",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
